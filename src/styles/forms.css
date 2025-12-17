@@ -1,0 +1,141 @@
+/* =============================== Radio Style =================================== */
+.orbe-option input[type="radio"] {
+  display: none;
+}
+
+/* Cada opção */
+.orbe-option {
+  display: flex;
+  /* line-height: 32px; */
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  /* font-size: 1rem; */
+}
+
+/* Base do orbe */
+.orbe {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+
+  border: 2px solid #000;
+  background: #1a1a1a;
+  box-shadow: inset 0 0 6px #000;
+
+  transition: all 0.25s ease;
+}
+
+/* Runa dentro do orbe apagado */
+.orbe::after {
+  content: "ᚢ";
+  /* ← troque para ᚠ ou ✧ se quiser */
+  color: #4cff4c;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  transition: 0.25s;
+}
+
+/* Runa desaparece ao selecionar */
+.orbe-option input:checked + .orbe::after {
+  opacity: 0;
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 6px #4cff4c, 0 0 14px #37ff37, inset 0 0 4px #baffba;
+  }
+
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px #4cff4c, 0 0 20px #37ff37, inset 0 0 6px #d7ffd7;
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 6px #4cff4c, 0 0 14px #37ff37, inset 0 0 4px #baffba;
+  }
+}
+
+/* Orbe ACESO quando selecionado */
+.orbe-option input[type="radio"]:checked + .orbe {
+  background: radial-gradient(circle, #4cff4c 20%, #1f7a1f 80%);
+  border-color: #37ff37;
+  animation: pulse 1.6s infinite ease-in-out;
+}
+
+/*Concetração*/
+.focus-icon-purple {
+  color: #b85cff; /* roxo arcano */
+  font-size: 1.2em;
+
+  display: inline-block;
+  animation: focusPulseScale 1.6s infinite ease-in-out; /* animação contínua */
+}
+
+@keyframes focusPulseScale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+/* ================== CHECKBOX PERSONALIZADO ================== */
+.pergaminho-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Checkbox escondido */
+.pergaminho-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Caixa personalizada */
+.pergaminho-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #f4e1b0; /* tom pergaminho */
+  border: 2px solid #a67c52; /* borda marrom */
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 4px #fff7e0; /* leve brilho */
+}
+
+/* Marca de seleção */
+.pergaminho-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 14px;
+
+  /* ✔ centrado perfecto */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%) rotate(45deg);
+
+  border: solid #8b4513;
+  border-width: 0 3px 3px 0;
+}
+
+/* Hover / efeito mágico leve */
+.pergaminho-checkbox:hover .checkmark {
+  box-shadow: inset 0 0 6px #fff7e0, 0 0 6px #a67c52;
+}

@@ -1,0 +1,82 @@
+.container {
+  background: tan;
+  padding: 25px 20px;
+  max-width: 1100px;
+  margin: auto;
+
+  border: solid calc(0.8vw + 4px) #f9e2c3;
+  border-image: url("https://res.cloudinary.com/ez-nettools/image/upload/v1635183100/parchment-hand-painted_zfdfpt.avif");
+  border-image-slice: 32 fill;
+  border-image-repeat: stretch;
+  background-clip: padding-box;
+
+  box-shadow: 0 0 25px #000;
+  color: #2b1a0e;
+}
+
+.section {
+  padding: 15px;
+  margin-bottom: 20px;
+  /* background: rgba(255, 243, 220, 0.55); */
+  border-left: 4px solid #8b0000;
+  border-radius: 4px;
+}
+
+.listagem-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+
+.table-block {
+  display: flex;
+  gap: 20px;
+  border: 10px solid #7a0000;
+  padding: 10px;
+  flex-wrap: wrap; /* permite que las tablas bajen si no caben */
+}
+
+/* Columnas de tablas */
+.left-table {
+  flex: 1;
+  min-width: 250px; /* evita que se encoja demasiado */
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* ================== LEGEND / LEYENDA ================== */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-item i {
+  font-size: 1.1rem;
+}
+
+/* Ajuste específico para ícones de descanso */
+.legend-item .bi {
+  padding: 0 5px;
+  color: #5e2a00;
+}
+
+/* Texto da legenda */
+.legend-item span {
+  font-weight: bold;
+}

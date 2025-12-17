@@ -1,0 +1,24 @@
+body {
+  font-family: "Garamond", serif;
+  background: url("https://wallpapercave.com/wp/wp12340529.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #f2e6c9;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  padding: 20px 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+li {
+  margin: 4px 0;
+}

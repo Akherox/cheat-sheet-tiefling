@@ -1,0 +1,39 @@
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+  color: #5e2a00;
+  margin-top: 5px;
+  text-shadow: 1px 1px 3px #f8dca3;
+}
+
+.magic {
+  color: #004e8a;
+  font-weight: bold;
+}
+
+.nonmagic {
+  color: #7a0000;
+  font-weight: bold;
+}
+
+.wrapper {
+  font-weight: normal;
+  color: #2b1a0e;
+  padding: 0 20px;
+  /* your color */
+}
+
+.wrapper p {
+  margin-top: 0;
+  line-height: auto;
+}
+
+.slot {
+  background: #004e8a;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  margin-left: 4px;
+}

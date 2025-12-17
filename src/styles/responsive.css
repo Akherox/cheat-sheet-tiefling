@@ -1,0 +1,107 @@
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+
+  .section {
+    padding: 14px;
+  }
+
+  .table-block {
+    gap: 15px;
+  }
+
+  .table-block table {
+    font-size: 14px;
+  }
+
+  table caption {
+    font-size: 1.05rem;
+  }
+}
+
+/* Cellphones */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+  }
+
+  .container {
+    padding: 15px 10px;
+  }
+
+  .section {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  table caption {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .table-block {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left-table, .right-column {
+    min-width: 100%;
+  }
+
+  .right-column table {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .table-block {
+    gap: 10px;
+  }
+
+  .table-block table {
+    font-size: 13px;
+  }
+
+  table caption {
+    font-size: 1rem;
+  }
+}

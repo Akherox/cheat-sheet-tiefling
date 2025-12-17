@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal - Cheat Sheet</title>
+    <link rel="icon" type="image/png" href="https://icon-library.com/images/dnd-icon/dnd-icon-22.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="src/styles/base.css">
+    <link rel="stylesheet" href="src/styles/forms.css">
+    <link rel="stylesheet" href="src/styles/icons.css">
+    <link rel="stylesheet" href="src/styles/layout.css">
+    <link rel="stylesheet" href="src/styles/responsive.css">
+    <link rel="stylesheet" href="src/styles/tables.css">
+    <link rel="stylesheet" href="src/styles/typography.css">
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="container">
+
+            <h1>Cheat Sheet - Guerreiro/Paladino</h1>
+
+            <div class="character-actions-section">
+                <h2>Ações por turno</h2>
+
+                <!-- Legend -->
+                <div class="legend">
+                    <div class="legend-item">
+                        <i class="fa-solid fa-gem magic-orb"></i>
+                        <span class="magic">Nível da Magia</span>
+                    </div>
+
+                    <div class="legend-item">
+                        <i class="fa-solid fa-hand-fist character-action"></i>
+                        <span class="nonmagic">Não é Magia</span>
+                    </div>
+
+                    <div class="legend-item">
+                        <i class="fa-solid fa-bullseye focus-icon-purple"></i>
+                        <span class="magic">Exige Concentração</span>
+                    </div>
+
+                    <div class="legend-item">
+                        <i class="bi bi-hourglass-split"></i>
+                        <span class="nonmagic">Descanso Curto</span>
+                    </div>
+
+                    <div class="legend-item">
+                        <i class="bi bi-hourglass-top"></i>
+                        <span class="nonmagic">Descanso Longo</span>
+                    </div>
+                </div>
+
+                <!-- Concentração -->
+                <div class="section">
+                    <h3>Concentração ativa?</h3>
+
+                    <h4 class="magic">Magias que exigem concentração:
+                        <i class="fa-solid fa-bullseye focus-icon-purple"></i>
+                    </h4>
+                    <form class="listagem-inline">
+                        <label class="orbe-option">
+                            <input type="radio" name="buff" value="hm">
+                            <span class="orbe"></span>
+                            <span>Hunter’s Mark ativo?</span>
+                        </label>
+
+                        <label class="orbe-option">
+                            <input type="radio" name="buff" value="sof">
+                            <span class="orbe"></span>
+                            <span>Shield of Faith ativo?</span>
+                        </label>
+
+                        <label class="orbe-option">
+                            <input type="radio" name="buff" value="ws">
+                            <span class="orbe"></span>
+                            <span>Wrathful Smite ativo?</span>
+                        </label>
+
+                        <label class="orbe-option">
+                            <input type="radio" name="buff" value="ss">
+                            <span class="orbe"></span>
+                            <span>Searing Smite ativo?</span>
+                        </label>
+
+                        <label class="orbe-option">
+                            <input type="radio" name="buff" value="ts">
+                            <span class="orbe"></span>
+                            <span>Thunderous Smite ativo?</span>
+                        </label>
+
+                        <label class="orbe-option">
+                            <input type="radio" name="buff" value="bs">
+                            <span class="orbe"></span>
+                            <span>Branding Smite ativo?</span>
+                        </label>
+
+                        <label class="orbe-option">
+                            <input type="radio" name="buff" value="dm">
+                            <span class="orbe"></span>
+                            <span>Detect Magic ativo?</span>
+                        </label>
+
+                        <label class="orbe-option">
+                            <input type="radio" name="buff" value="deag">
+                            <span class="orbe"></span>
+                            <span>Detect Evil and Good ativo?</span>
+                        </label>
+                    </form>
+                </div>
+
+                <!-- Movement -->
+                <div class="section">
+                    <h3>Movimento normal</h3>
+                    <p>A maioria das raças de personagens tem 30 pés (9 metros) de deslocamento por turno. <br /> Isso
+                        significa que você pode andar até 6 quadrados em um mapa de batalha (cada quadrado = 5
+                        pés).</p>
+                </div>
+
+                <!-- Bonus Action -->
+                <div class="section">
+                    <h3>BÔNUS ACTION (escolha 1 por turno)</h3>
+                    <ul>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>
+                            Hunter’s Mark
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>
+                            Wrathful Smite
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>
+                            Searing Smite
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>
+                            Thunderous Smite
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>
+                            Compelled Duel
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li class="nonmagic">
+                            <div class="class-feature-container">
+                                <i class="fa-solid fa-hand-back-fist magic-hand"></i>
+                                <div class="aura"></div>
+                            </div>
+                            Vow of Enmity
+                            <span class="rest-icons">
+                                <i class="bi bi-hourglass-split" title="Descanso Curto"></i>
+                                <i class="bi bi-hourglass-top" title="Descanso Longo"></i>
+                            </span>
+                        </li>
+
+                        <li class="nonmagic">
+                            <div class="class-feature-container">
+                                <i class="fa-solid fa-hand-back-fist magic-hand"></i>
+                                <div class="aura"></div>
+                            </div>
+                            Second Wind
+                            <span class="rest-icons">
+                                <i class="bi bi-hourglass-split" title="Descanso Curto"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Action -->
+                <div class="section">
+                    <h3>ACTION (escolha 1 ação principal por turno)</h3>
+                    <ul>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"> </i>
+                            Attack
+                            <div class="wrapper">
+                                <p>
+                                    <strong>Acerto:</strong>
+                                    <br>1d20 + [modificador de Força] + [bônus de proficiência] =
+
+                                    <br>
+                                    <br><strong>Dano:</strong>
+                                    <br>1d8 (arma: espada longa)
+                                    <br>+ [modificador de Força]
+                                    <br>+ 2 (Fighting Style: Dueling)
+                                    <br>+ 1d6 (Hunter’s Mark: dano extra)
+                                    <br>+ 2d8 (Divine Smite: 1º nível)
+                                    <br>+ 1d8 (adicional contra mortos-vivos ou demônios)
+                                </p>
+                            </div>
+
+                        </li>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"> </i>
+                            Dash
+                            <div class="wrapper">
+                                <p>
+                                    <br>Você pode se mover até o dobro de seu deslocamento nesta ação.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"> </i>
+                            Disengage
+                            <div class="wrapper">
+                                <p>
+                                    <br>Seu movimento não provoca ataques de oportunidade até o fim do seu turno.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"> </i>
+                            Help
+                            <div class="wrapper">
+                                <p>
+                                    <br>Você concede vantagem a um aliado em um teste de ataque ou habilidade.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"> </i>
+                            Ready
+                            <div class="wrapper">
+                                <p>
+                                    <br>Prepare uma ação específica para ser realizada como reação a um gatilho
+                                    definido.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"> </i>
+                            Use Object
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>Cure Wounds
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>Protection from Evil and Good
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-bullseye focus-icon-purple"></i>
+                            Detect Magic
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-bullseye focus-icon-purple"></i>
+                            Detect Evil and Good
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>Command
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>Bless
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>Bane
+                        </li>
+                        <li class="nonmagic">
+                            <div class="class-feature-container">
+                                <i class="fa-solid fa-hand-back-fist magic-hand"></i>
+                                <div class="aura"></div>
+                            </div>
+                            Lay on Hands (5 x nivel do paladino)
+                            <span class="rest-icons">
+                                <i class="bi bi-hourglass-top" title="Descanso Longo"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Extra Action -->
+                <div class="section">
+                    <h3>Ação Extra (Action Surge)
+                        <span class="rest-icons">
+                            <i class="bi bi-hourglass-split" title="Descanso Curto"></i>
+                        </span>
+                    </h3>
+                    <p class="nonmagic">
+                        <i class="fa-solid fa-hand-fist character-action"> </i>
+                        Pode atacar novamente.
+                    </p>
+                    <p class="magic">
+                        <i class="fa-solid fa-gem magic-orb"> '</i>
+                        Ou conjurar outra magia (se permitido).
+                    </p>
+
+                    <label class="pergaminho-checkbox">
+                        <input type="checkbox" id="action-surge">
+                        <span class="checkmark"></span>
+                        Usou seu Action Surge?
+                    </label>
+                </div>
+
+                <!-- Movement -->
+                <div class="section">
+                    <h3>Movimento restante (se ainda tiver)</h3>
+                    <p class="nonmagic">
+                        <i class="fa-solid fa-hand-fist character-action"> </i>
+                        Movimento normal.
+                    </p>
+                </div>
+
+                <!-- Free Object -->
+                <div class="section">
+                    <h3>Interação com Objeto (gratuita)</h3>
+                    <ul>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"> </i>
+                            Sacar poção
+                        </li>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"> </i>
+                            Abrir porta
+                        </li>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"> </i>
+                            Puxar alavanca
+                        </li>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"> </i>
+                            Etc.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="section">
+                    <h3>Marcar Recursos Gastos</h3>
+                    <ul class="listagem-inline">
+                        <li class="magic">
+                            <label class="pergaminho-checkbox">
+                                <input type="checkbox" id="action-surge">
+                                <span class="checkmark"></span>
+                                Slots de magia
+                            </label>
+                        </li>
+                        <li class="nonmagic">
+                            <label class="pergaminho-checkbox">
+                                <input type="checkbox" id="action-surge">
+                                <span class="checkmark"></span>
+                                Action Surge
+                            </label>
+                        </li>
+                        <li class="nonmagic">
+                            <label class="pergaminho-checkbox">
+                                <input type="checkbox" id="action-surge">
+                                <span class="checkmark"></span>
+                                Lay on Hands
+                            </label>
+                        </li>
+                        <li class="nonmagic">
+                            <label class="pergaminho-checkbox">
+                                <input type="checkbox" id="action-surge">
+                                <span class="checkmark"></span>
+                                Channel Divinity (Vow of Enmity)
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Reaction -->
+                <div class="section">
+                    <h3>Reação disponível?</h3>
+                    <ul>
+                        <li class="nonmagic">
+                            <i class="fa-solid fa-hand-fist character-action"></i>
+                            Opportunity Attack
+                        </li>
+                        <li class="magic">
+                            <i class="fa-solid fa-gem magic-orb"> '</i>
+                            Hellish Rebuke (1 gratuito)
+                            <span class="rest-icons">
+                                <i class="bi bi-hourglass-top" title="Descanso Longo"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tables -->
+                <div class="table-block">
+                    <!-- Dados -->
+                    <table class="left-table">
+                        <caption>D4 a D100 – Dados Comuns de D&D</caption>
+                        <thead>
+                            <tr>
+                                <th>Dado</th>
+                                <th>Armas</th>
+                                <th>Magias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="center">d4</td>
+                                <td>Armas muito leves <em>(adaga, clava leve)</em></td>
+                                <td>Bless <em>(bônus 1d4 em ataques e saves)</em>, Heroism <em>(cura temporária)</em>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">d6</td>
+                                <td>Espada curta, adaga, maça leve, machado leve</td>
+                                <td>Aid <em>(cura/vida extra)</em>, algumas magias de dano secundário</td>
+                            </tr>
+                            <tr>
+                                <td align="center">d8</td>
+                                <td>Espada longa, lança, maça, martelo de guerra, machado médio</td>
+                                <td>Cure Wounds <em>(cura 1d8 por nível)</em>, Divine Smite <em>(dano extra 2d8 em
+                                        mortos-vivos/demônios aumenta ainda mais)</em></td>
+                            </tr>
+                            <tr>
+                                <td align="center">d10</td>
+                                <td>Espada longa <em>(quando usada com duas mãos), alabarda</em></td>
+                                <td>Algumas magias de dano <em>(Buffs podem usar d10 em tabelas)</em></td>
+                            </tr>
+                            <tr>
+                                <td align="center">d12</td>
+                                <td>Machado grande, maça pesada</em></td>
+                                <td>Pouco usado em magias do paladino</td>
+                            </tr>
+                            <tr>
+                                <td align="center">d20</td>
+                                <td>Jogadas de ataque, testes de resistência, testes de perícia</td>
+                                <td>Sempre usado para conjurar <em>(teste de concentração, ataque mágico se houver)</em>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">d100</td>
+                                <td>Não usado em armas</td>
+                                <td>Usado em tabelas de tesouro, encontros aleatórios, efeitos divinos/aleatórios</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="right-column">
+                        <!-- Slots -->
+                        <table>
+                            <caption>Slots de Magia por Nível do Conjurador (segundo nivel da classe Paladino)</caption>
+                            <thead>
+                                <tr>
+                                    <th>Níveis de Paladino</th>
+                                    <th>Slots de 1° nível</th>
+                                    <th>Slots de 2° nível</th>
+                                    <th>Slots de 3° nível</th>
+                                    <th>Slots de 4° nível</th>
+                                    <th>Slots de 5° nível</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr align="center">
+                                    <td align="left">3</td>
+                                    <td>2</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">4 – 5</td>
+                                    <td>3</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">6 – 7</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">8 – 9</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">10 – 11</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">12 – 14</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">15 – 16</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">17 – 19</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">20</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                </tr>
+                        </table>
+
+                        <!-- Proficiency -->
+                        <table>
+                            <caption>Bônus de Proficiência por Nível de Personagem</caption>
+                            <thead>
+                                <tr>
+                                    <th>Nível do Personagem</th>
+                                    <th>Bônus de Proficiência</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr align="center">
+                                    <td align="left">1 – 4</td>
+                                    <td>+2</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">5 – 8</td>
+                                    <td>+3</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">9 – 12</td>
+                                    <td>+4</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">13 – 16</td>
+                                    <td>+5</td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="left">17 – 20</td>
+                                    <td>+6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

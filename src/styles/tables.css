@@ -1,0 +1,33 @@
+.table-block table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 250, 240, 0.75);
+  /* border: 2px solid #7a2d00; */
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 15px;
+  /* box-shadow: 0 0 8px #00000055; */
+}
+
+.table-block th {
+  background: #d9b382;
+  color: #2b1a0e;
+  text-align: left;
+  padding: 6px 8px;
+}
+
+.table-block td {
+  border: 1px solid #000;
+  /* border: 1px solid #7a2d00; */
+  padding: 6px 8px;
+}
+
+table caption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #5e2a00;
+  text-shadow: 1px 1px 2px #f8dca3;
+}

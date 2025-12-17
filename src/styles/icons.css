@@ -1,0 +1,111 @@
+.fa-solid {
+  padding: 0 5px;
+}
+
+.bi {
+  padding: 0 5px;
+  color: #5e2a00;
+}
+
+.magic-orb {
+  color: #3498db;
+  /* Azul */
+  font-size: 1.2em;
+  /* Ajusta tamanho */
+  text-shadow: 0 0 6px #3498db, 0 0 20px #2980b9;
+  /* Brilho */
+  border-radius: 50%;
+  /* Deixa mais “orbe” visualmente */
+}
+
+.character-action {
+  color: #f1c27d;
+  font-size: 1.2em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+.rest-icons {
+  margin-left: 6px;
+  display: inline-flex;
+  gap: 4px;
+  opacity: 0.85;
+}
+
+/* Habilidade de Classe*/
+.class-feature-container {
+  position: relative;
+  display: inline-flex;
+  /* flex para centralizar */
+  align-items: center;
+  /* vertical */
+  justify-content: center;
+  /* horizontal */
+  /* width: 1.3em;  */
+  /* height: 1.3em; */
+}
+
+.magic-hand {
+  font-size: 1.2em;
+  color: #f1c27d;
+  /* cor da pele */
+  -webkit-text-stroke: 1px black;
+  position: relative;
+  z-index: 1;
+  /* sempre acima da aura */
+}
+
+.aura {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+      rgba(52, 152, 219, 0.6) 0%,
+      rgba(52, 152, 219, 0) 70%);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  z-index: 0;
+  /* atrás do ícone */
+  animation: auraPulse 2s infinite ease-in-out;
+}
+
+@keyframes auraPulse {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+/* ================== CONCENTRACIÓN ================== */
+.focus-icon-purple {
+  color: #b85cff;
+  /* roxo arcano */
+  font-size: 1.2em;
+
+  display: inline-block;
+  animation: focusPulseScale 1.6s infinite ease-in-out;
+  /* animação contínua */
+}
+
+@keyframes focusPulseScale {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
