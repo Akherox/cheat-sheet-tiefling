@@ -5,7 +5,7 @@
   margin: auto;
 
   border: solid calc(0.8vw + 4px) #f9e2c3;
-  border-image: url("https://res.cloudinary.com/ez-nettools/image/upload/v1635183100/parchment-hand-painted_zfdfpt.avif");
+  border-image: url("../assets/parchment-hand-painted");
   border-image-slice: 32 fill;
   border-image-repeat: stretch;
   background-clip: padding-box;
