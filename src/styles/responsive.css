@@ -1,46 +1,25 @@
-@media screen and (min-width: 601px) and (max-width: 900px) {
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
+/* =========================
+   TABLE LAYOUT – TABLET & MOBILE
+========================= */
 
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-
-  p,
-  li {
-    font-size: 1rem;
-    line-height: 1.4rem;
-  }
-
-  .container {
-    padding: 20px 15px;
-  }
-
-  .section {
-    padding: 14px;
-  }
-
+@media (max-width: 900px) {
   .table-block {
+    flex-direction: column;
     gap: 15px;
   }
 
-  .table-block table {
-    font-size: 14px;
-  }
-
-  table caption {
-    font-size: 1.05rem;
+  .left-table,
+  .right-column {
+    width: 100%;
+    min-width: 100%;
   }
 }
 
-/* Cellphones */
-@media screen and (max-width: 600px) {
+/* =========================
+   MOBILE (phones)
+========================= */
+
+@media (max-width: 768px) {
   h1 {
     font-size: 1.6rem;
     text-align: center;
@@ -67,41 +46,38 @@
   .section {
     padding: 12px;
   }
-}
 
-@media screen and (max-width: 480px) {
-  table caption {
-    font-size: 1rem;
-    margin-bottom: 5px;
-  }
-}
-
-@media screen and (max-width: 900px) {
+  /* TABLE FIX (CRITICAL) */
   .table-block {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .left-table, .right-column {
-    min-width: 100%;
-  }
-
-  .right-column table {
-    width: 100%;
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .table-block {
-    gap: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .table-block table {
+    min-width: 600px;
     font-size: 13px;
   }
 
-  table caption {
+  .table-block th,
+  .table-block td {
+    padding: 4px 6px;
+  }
+
+  .table-block caption {
     font-size: 1rem;
+  }
+}
+
+/* =========================
+   EXTRA SMALL SCREENS
+========================= */
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .table-block caption {
+    font-size: 0.95rem;
   }
 }

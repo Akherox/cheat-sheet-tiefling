@@ -1,12 +1,14 @@
+/* =========================
+   TABLE BASE STYLES
+========================= */
+
 .table-block table {
   width: 100%;
   border-collapse: collapse;
   background: rgba(255, 250, 240, 0.75);
-  /* border: 2px solid #7a2d00; */
   border: 1px solid #000;
   border-radius: 6px;
   font-size: 15px;
-  /* box-shadow: 0 0 8px #00000055; */
 }
 
 .table-block th {
@@ -18,11 +20,10 @@
 
 .table-block td {
   border: 1px solid #000;
-  /* border: 1px solid #7a2d00; */
   padding: 6px 8px;
 }
 
-table caption {
+.table-block caption {
   caption-side: top;
   font-weight: bold;
   font-size: 1.1rem;

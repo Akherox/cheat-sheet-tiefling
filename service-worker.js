@@ -6,6 +6,7 @@ const FILES_TO_CACHE = [
   "./manifest.json",
   "./service-worker.js",
 
+  // CSS
   "./src/styles/base.css",
   "./src/styles/forms.css",
   "./src/styles/icons.css",
@@ -14,6 +15,11 @@ const FILES_TO_CACHE = [
   "./src/styles/tables.css",
   "./src/styles/typography.css",
 
+  // Ícones
+  "./src/assets/icon-192.png",
+  "./src/assets/icon-512.png",
+
+  // Fontes externas
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
   "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
 ];
